@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<script>
+'use strict';
+
+
+let password,admin;
+
+    admin = prompt("ID를 입력해주세요",'');
+
+if (admin == "Admin"){
+
+    password = prompt("비밀번호:",'');
+
+    if (password == "TheMaster"){
+        alert(["환영합니다"]);
+    } else if  ( password == '' || password == null) {
+        alert(["취소 되엇습니다."]);
+    }else{
+        alert( "인증 실패..");
+    } 
+    
+} else if (admin == '' || admin == null){
+    alert("로그인 취소되었슴");
+} else{
+    alert('아이디가 아닙니다.');
+}
+</script>
